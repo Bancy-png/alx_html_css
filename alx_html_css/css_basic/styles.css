@@ -4,6 +4,9 @@ body {
   flex-direction: column;
   height: 100vh; /* Full viewport height */
   margin: 0;
+  background-color: #f0f0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
 }
 
 /* Make main take the remaining space */
@@ -13,8 +16,33 @@ main {
   flex: auto;
 }
 
-/* Header and Footer styles (optional background for clarity) */
-header,
+/* Logo styling */
+.logo {
+  font-size: 32px;
+  margin-right: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #4CAF50;
+  padding: 20px;
+}
+
+/* Header navigation list */
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 20px;
+  color: white;
+}
+
+/* Footer styles */
 footer {
   background-color: #eee;
   padding: 10px;
@@ -27,6 +55,16 @@ article {
   overflow-y: auto;
   background-color: #f9f9f9;
   padding: 10px;
+}
+
+article h2 {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+article p {
+  line-height: 1.6;
 }
 
 /* Aside takes 1/3 of the width */
