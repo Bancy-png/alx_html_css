@@ -54,3 +54,30 @@ body {
     text-align: center;
   }
 }
+.pentagons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pentagon {
+  position: relative;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  background: #FF6565; /* Change this to match Figma color */
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
